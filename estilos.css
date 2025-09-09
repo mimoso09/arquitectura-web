@@ -1,0 +1,115 @@
+body {
+    background: linear-gradient(135deg, #fdf6ee 0%, #f7e7ce 100%);
+    color: #4e342e;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background: #b85c38;
+    color: #fff8f0;
+    padding: 32px 0 16px 0;
+    text-align: center;
+    border-bottom: 5px solid #e7b87a; 
+}
+
+header h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-family: 'Georgia', serif;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #e7b87a;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #e7b87a; 
+    border-bottom: 3px solid #b85c38;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #7a9d54; 
+    color: #fff8f0;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(122, 157, 84, 0.10);
+}
+
+nav ul li a:hover {
+    background-color: #b85c38; 
+    color: #fff8f0;
+    transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+    background: #7a9d54; 
+    color: #fff8f0;
+    text-align: center;
+    padding: 32px 0 16px 0;
+    margin-top: 40px;
+    border-top: 5px solid #e7b87a;
+}
+
+footer h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: #e7b87a;
+}
+
+footer button {
+    background: #b85c38; 
+    color: #fff8f0;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 16px 0;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(184, 92, 56, 0.10);
+}
+
+footer button:hover {
+    background: #e7b87a; 
+    color: #7a9d54;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul li a {
+        width: 80%;
+        margin: 0 auto;
+    }
+    header, footer {
+        padding: 20px 0 10px 0;
+    }
+}
