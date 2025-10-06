@@ -1,0 +1,44 @@
+body {
+  background-color: #1e3a8a; /* Azul elegante */
+}
+
+html {
+  font-size: 16px;
+  text-align: center;
+  background-color: #1e3a8a; 
+}
+
+div {
+  font-size: 4rem;
+  background-color: #fbbf24; 
+  width: 500px;
+  border: 8px solid #2563eb; 
+  border-radius: 20px;
+  display: block;
+  margin: 32px auto;
+  box-shadow: 0 8px 24px rgba(30, 58, 138, 0.25);
+  color: #1e293b; 
+}
+
+p {
+  font-size: 1.5rem;
+  color: #f1f5f9; 
+}
+
+#hijo {
+  color: #fbbf24;
+  background-color: #2563eb; 
+  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 8px 0;
+  margin-top: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  div {
+    font-size: 2rem;
+    background-color: #38bdf8; 
+    border-color: #fbbf24; 
+  }
+}
