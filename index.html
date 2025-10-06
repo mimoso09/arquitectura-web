@@ -1,17 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Husqvarna - Hiperbikes</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #0a2342;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      color: #0a2342;
+      padding: 32px 0 16px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(10,35,66,0.08);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0 0 8px 0;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+    }
+    nav a {
+      color: #0a2342;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #fbbf24;
+    }
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+    section {
+      background: #173d6b;
+      border-radius: 16px;
+      margin-bottom: 32px;
+      padding: 32px 24px;
+      box-shadow: 0 4px 24px rgba(10,35,66,0.12);
+    }
+    section h2 {
+      color: #fbbf24;
+      font-size: 2rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    section p {
+      font-size: 1.2rem;
+      color: #e5e7eb;
+      margin-bottom: 0;
+    }
+    footer {
+      background: #fff;
+      color: #0a2342;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 1rem;
+      box-shadow: 0 -2px 8px rgba(10,35,66,0.08);
+      margin-top: 40px;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 0 8px;
+      }
+      section {
+        padding: 18px 8px;
+      }
+      nav ul {
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div>Qué es un DIV?
-    <p>Este es un parrafo</p>
-    <p id="parrafo2">
-      <div id="hijo">Este es un segundo párrafo</div>
-    </p>
-  </div>
+  <header>
+    <h1>Husqvarna</h1>
+    <nav>
+      <ul>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#accesorios">Accesorios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="modelos">
+      <h2>Modelos Disponibles</h2>
+      <p>Descubre nuestra gama de motocicletas Husqvarna.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:24px; margin-top:24px; justify-content:center;">
+        <div style="background:#fff; color:#0a2342; border-radius:12px; width:260px; box-shadow:0 2px 8px rgba(10,35,66,0.10); padding:18px;">
+          <img src="https://www.hiperbikes.com.mx/wp-content/uploads/2019/04/HQV_FC-450-Rockstar-Edition-2025.jpg" alt="FE 501" style="width:100%; border-radius:8px;">
+          <h3 style="margin:12px 0 6px 0;">FE 501</h3>
+          <p style="font-size:1rem; margin:0;">Enduro | 510.9 cc</p>
+        </div>
+        <div style="background:#fff; color:#0a2342; border-radius:12px; width:260px; box-shadow:0 2px 8px rgba(10,35,66,0.10); padding:18px;">
+          <img src="https://www.hiperbikes.com.mx/wp-content/uploads/2019/11/HQV_FE-501-2025.jpg" alt="FC 250" style="width:100%; border-radius:8px;">
+          <h3 style="margin:12px 0 6px 0;">FC 250</h3>
+          <p style="font-size:1rem; margin:0;">Motocross | 250 cc</p>
+        </div>
+        <div style="background:#fff; color:#0a2342; border-radius:12px; width:260px; box-shadow:0 2px 8px rgba(10,35,66,0.10); padding:18px;">
+          <img src="https://www.hiperbikes.com.mx/wp-content/uploads/2019/02/HQV_TE-300-2025.jpg" alt="Svartpilen 401" style="width:100%; border-radius:8px;">
+          <h3 style="margin:12px 0 6px 0;">Svartpilen 401</h3>
+          <p style="font-size:1rem; margin:0;">Street | 373 cc</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="accesorios">
+      <h2>Accesorios</h2>
+      <p>Encuentra los mejores accesorios para tu motocicleta.</p>
+      <ul style="color:#fff; font-size:1.1rem; margin-top:18px;">
+        <li>Casco Husqvarna</li>
+        <li>Guantes Enduro</li>
+        <li>Chaquetas y protecciones</li>
+        <li>Kit de mantenimiento</li>
+      </ul>
+    </section>
+    
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Ponte en contacto con nosotros para más información.</p>
+      <form style="margin-top:18px;">
+        <input type="text" placeholder="Nombre" required style="padding:8px; border-radius:6px; border:none; margin-bottom:8px; width:100%; max-width:320px;">
+        <br>
+        <input type="email" placeholder="Correo electrónico" required style="padding:8px; border-radius:6px; border:none; margin-bottom:8px; width:100%; max-width:320px;">
+        <br>
+        <textarea placeholder="Mensaje" required style="padding:8px; border-radius:6px; border:none; margin-bottom:8px; width:100%; max-width:320px; height:80px;"></textarea>
+        <br>
+        <button type="submit" style="background:#fbbf24; color:#0a2342; font-weight:700; border:none; border-radius:6px; padding:10px 24px; cursor:pointer;">Enviar</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Hiperbikes. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
